@@ -157,7 +157,7 @@
 
           <div class="more-topics" id="more-topics">
 
-            <article class="topic-card">
+            <article hidden class="topic-card">
 
               <h3>
                 Automotive
@@ -175,7 +175,7 @@
             </article>
 
 
-            <article class="topic-card">
+            <article hidden class="topic-card">
 
               <h3>
                 Transportation
@@ -193,7 +193,7 @@
             </article>
 
 
-            <article class="topic-card">
+            <article hidden class="topic-card">
 
               <h3>
                 Resources
@@ -209,6 +209,7 @@
               </a>
 
             </article>
+<button type="button" class="button" id="more-topics" aria-expanded="false">More topics</button>
 
           </div>
 
@@ -355,5 +356,5 @@
 
   <div id="site-footer"></div>
 
-</body>
+<script>document.getElementById('more-topics').addEventListener('click',e=>{const b=e.currentTarget,open=b.getAttribute('aria-expanded')!=='true';document.querySelectorAll('.topic-card').forEach((c,i)=>c.hidden=i>=3&&!open);b.setAttribute('aria-expanded',String(open));b.textContent=open?'Show less':'More topics'});</script><style>.topic-card[hidden]{display:none!important}#more-topics{grid-column:1/-1;justify-self:center}</style></body>
 </html>
