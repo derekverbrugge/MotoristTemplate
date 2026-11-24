@@ -1,0 +1,5 @@
+# MotoristTemplate
+
+- [Motorists | Roads, Vehicles & Automotive Information](https://derekverbrugge.github.io/MotoristTemplate/)
+
+[Full text](https://derekverbrugge.github.io/MotoristTemplate/llms-full.txt)
